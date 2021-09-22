@@ -26,7 +26,7 @@
 
 .afspraak-maken
 {
-    padding: 25px 50px;
+    padding: 50px;
 }
 
 .afspraak-maken input
@@ -34,6 +34,8 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 100%;
     height: 50px;
 
@@ -59,7 +61,17 @@
 
 .afspraak-maken p
 {
-    margin-bottom: 20px;
     font-weight: lighter;
     color: rgb(65, 65, 65);
+}
+
+.open-tijden
+{
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.open-tijden img
+{
+    width: 100%;
 }
