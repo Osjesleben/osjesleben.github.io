@@ -8,7 +8,7 @@
 .header
 {
     width: 100%;
-    padding: 25px 0px;
+    padding: 25px 0;
 }
 
 .header img
@@ -16,7 +16,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 250px;
 }
 
 .wrapper
@@ -27,6 +27,9 @@
 .afspraak-maken
 {
     padding: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .afspraak-maken input
@@ -47,6 +50,12 @@
     font-weight: bold;
 }
 
+.afspraak-maken input:hover
+{
+    cursor: pointer;
+    background-color: #22ad34;
+}
+
 .afspraak-maken input:active
 {
     background-color: #22ad34;
@@ -59,36 +68,23 @@
     margin-bottom: 10px;
 }
 
-.afspraak-maken a
-{
-    text-decoration: none;
-}
-
 .afspraak-maken p
 {
     font-weight: lighter;
     color: rgb(65, 65, 65);
 }
 
-.open-tijden
-{
-    padding-top: 35px;
-    padding-bottom: 25px;
-}
-
-.open-tijden img
-{
-    width: 100%;
-}
-
-.footer
+.warning
 {
     margin-top: 50px;
     padding: 25px 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #0e0e10;
 }
 
-.footer h1
+.warning h1
 {
     font-size: 20px;
     font-weight: 500;
@@ -96,8 +92,25 @@
     color: #f2f2f4;
 }
 
-.footer p
+.warning p
 {
     font-weight: lighter;
     color: #d0d0d2;
+}
+
+@media only screen and (min-width: 600px)
+{
+    .afspraak-maken { width: 500px; }
+    
+    .afspraak-maken input
+    {
+        width: 250px;
+        margin-left: 0;
+    }
+
+    .warning 
+    { 
+        width: 400px;
+        border-radius: 15px; 
+    }
 }
