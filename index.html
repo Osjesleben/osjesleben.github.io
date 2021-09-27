@@ -12,19 +12,32 @@
 </head>
 
 <body>
-    <div class="header">
+    <div id="header">
         <img src="img/HXPlogo.png" alt="HairXperience">
     </div>
 
-    <div class="wrapper">
-        <div class="afspraak-maken">
+    <div id="wrapper">
+        <div class="block">
             <h1>Maak een afspraak</h1>
             <p>Voor het maken van een afsrpaak bij HairXperience Maarssen klikt u op de knop hieronder en vult u de nodige gegevens in. Wij zetten het in het systeem en zien u graag binnenkort in de salon.</p>
-            <input type="button" value="Afspraak maken" onclick="window.open('https://www.barberbooking.com/kapper/maarssen/hairxperience/','_blank')">
+            <input class="button" type="button" value="Afspraak maken" onclick="window.open('https://www.barberbooking.com/kapper/maarssen/hairxperience/','_blank')">
             <p>Maakt u liever telefonisch een afspraak? Dat kan ook! Bel ons op: 0346 579 755</p>
         </div>
+        
+        <div class="block" id="contact">
+            <form action="https://formsubmit.co/jarno-akkerman@hotmail.com" method="POST">
+                <h1>Mail ons</h1>
+                <p>Vul hier onder het contact formulier in en wij zullen zo spoedig mogelijk op uw bericht reageren.</p>
+                <div class="flex-container">
+                    <input class="text-input" id="spacer" type="text" name="name" placeholder="Naam" required>
+                    <input class="text-input" type="email" name="email" placeholder="Email adres" required>
+                </div>
+                <textarea class="text-input" name="message" id="message" placeholder="Typ hier uw bericht..." cols="30" rows="10" required></textarea>
+                <input class="button" id="contact-button" type="submit" value="Verzenden">
+            </form>
+        </div>
 
-        <div class="warning">
+        <div class="block" id="warning">
             <h1>In onderhoud!</h1>
             <p>Deze pagina is een tijdelijke vervanging voor onze website. We zijn op het moment druk bezig met onderhoud.</p>
         </div>
